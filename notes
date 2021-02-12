@@ -1,0 +1,11 @@
+gfj-wrwq-jdk\
+NotificationController
+
+    /**
+     * @Route("/notification", name="notification")
+     */
+    public function index(): Response
+    {
+        return $this->render('notification/index.html.twig', [
+            'controller_name' => 'NotificationController',
+        ]);

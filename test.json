@@ -1,0 +1,13 @@
+[{
+    "name":"Red Velvet Cake",
+    "flavour":"Red Velvet",
+    "product_slug":"Red-Velvet-Cake",
+    "product_thumbail":"redvel.webp",
+    "price":1557,
+    "fat":"23%",
+    "suger":"12.76%" ,
+    "weight":"500 gm",
+    "is_returnable":1,
+    "is_custom":1,
+    "post_category_id":1 
+}]

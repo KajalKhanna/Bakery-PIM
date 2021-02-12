@@ -1,0 +1,234 @@
+<?php //%255BApp%255CEntity%255CPost%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Post',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Post',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\PostRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'post_title' => [
+                        'fieldName' => 'post_title',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'post_title',
+                    ],
+                    'post_slug' => [
+                        'fieldName' => 'post_slug',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'post_slug',
+                    ],
+                    'post_content' => [
+                        'fieldName' => 'post_content',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'post_content',
+                    ],
+                    'post_type' => [
+                        'fieldName' => 'post_type',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnDefinition' => 'ENUM(\'post\', \'page\')',
+                        'columnName' => 'post_type',
+                    ],
+                    'post_status' => [
+                        'fieldName' => 'post_status',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnDefinition' => 'ENUM(\'draft\', \'pending\', \'active\', \'inactive\', \'trashed\')',
+                        'columnName' => 'post_status',
+                    ],
+                    'post_thumbnail' => [
+                        'fieldName' => 'post_thumbnail',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'post_thumbnail',
+                    ],
+                    'created' => [
+                        'fieldName' => 'created',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'created',
+                    ],
+                    'updated' => [
+                        'fieldName' => 'updated',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'updated',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'post_title' => 'post_title',
+                    'post_slug' => 'post_slug',
+                    'post_content' => 'post_content',
+                    'post_type' => 'post_type',
+                    'post_status' => 'post_status',
+                    'post_thumbnail' => 'post_thumbnail',
+                    'created' => 'created',
+                    'updated' => 'updated',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'post_title' => 'post_title',
+                    'post_slug' => 'post_slug',
+                    'post_content' => 'post_content',
+                    'post_type' => 'post_type',
+                    'post_status' => 'post_status',
+                    'post_thumbnail' => 'post_thumbnail',
+                    'created' => 'created',
+                    'updated' => 'updated',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'post',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'post_author' => [
+                        'fieldName' => 'post_author',
+                        'joinColumns' => [
+                            [
+                                'name' => 'post_author_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'posts',
+                        'targetEntity' => 'App\\Entity\\User',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Post',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'post_author_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'post_author_id' => 'post_author_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'post_author_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'post_category' => [
+                        'fieldName' => 'post_category',
+                        'joinColumns' => [
+                            [
+                                'name' => 'post_category_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'posts',
+                        'targetEntity' => 'App\\Entity\\PostCategory',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Post',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'post_category_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'post_category_id' => 'post_category_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'post_category_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

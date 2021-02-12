@@ -1,0 +1,96 @@
+<?php //%255Bf2760e5162743d9cef400a9792d64bb6%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'dpid' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT m0_.id AS id_0, m0_.name AS name_1, m0_.icon AS icon_2, m0_.type AS type_3, m0_.entity_path AS entity_path_4, m0_.status AS status_5, m0_.created AS created_6, m0_.updated AS updated_7, m0_.role AS role_8, m0_.parent_id AS parent_id_9 FROM menu m0_ WHERE m0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'entity' => 'App\\Entity\\Menu',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'name_1' => 'name',
+                    'icon_2' => 'icon',
+                    'type_3' => 'type',
+                    'entity_path_4' => 'entityPath',
+                    'status_5' => 'status',
+                    'created_6' => 'created',
+                    'updated_7' => 'updated',
+                    'role_8' => 'role',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'parent_id_9' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'entity' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'parent_id_9' => 'parent_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'entity',
+                    'name_1' => 'entity',
+                    'icon_2' => 'entity',
+                    'type_3' => 'entity',
+                    'entity_path_4' => 'entity',
+                    'status_5' => 'entity',
+                    'created_6' => 'entity',
+                    'updated_7' => 'entity',
+                    'role_8' => 'entity',
+                    'parent_id_9' => 'entity',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Menu',
+                    'name_1' => 'App\\Entity\\Menu',
+                    'icon_2' => 'App\\Entity\\Menu',
+                    'type_3' => 'App\\Entity\\Menu',
+                    'entity_path_4' => 'App\\Entity\\Menu',
+                    'status_5' => 'App\\Entity\\Menu',
+                    'created_6' => 'App\\Entity\\Menu',
+                    'updated_7' => 'App\\Entity\\Menu',
+                    'role_8' => 'App\\Entity\\Menu',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

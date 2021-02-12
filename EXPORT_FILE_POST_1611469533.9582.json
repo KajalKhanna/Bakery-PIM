@@ -1,0 +1,43 @@
+[{
+    "name":"Red Velvet Cake",
+    "flavour":"Red Velvet",
+    "product_slug":"Red-Velvet-Cake",
+    "description":"Red velvet cake is the quee",
+    "product_type":"egg",
+    "product_thumbail":"redvel.webp",
+    "fat":"23%",
+    "suger":"12.76%" ,
+    "weight":"500 gm",
+    "is_returnable":1,
+    "is_custom":1,
+    "post_category_id":1
+},
+{
+    "name":"Red Velvet Cake",
+    "flavour":"Red Velvet",
+    "product_slug":"Red-Velvet-Cake",
+    "product_type":"egg",
+    "product_thumbail":"redvel.webp",
+    "price":100,
+    "fat":"23%",
+    "suger":"12.76%" ,
+    "weight":"500 gm",
+    "is_returnable":1,
+    "is_custom":1,
+    "post_category_id":1
+},
+{
+    "name":"Buttermilk Cake",
+    "flavour":"Red Velvet",
+    "product_slug":"Red-Velvet-Cake",
+    "description":"Red velvet cake is the quee",
+    "product_type":"eggless",
+    "product_thumbail":"redvel.webp",
+    "price":197,
+    "fat":"21%",
+    "suger":"12.76%" ,
+    "weight":"500 gm",
+    "is_returnable":1,
+    "is_custom":1,
+    "post_category_id":1
+}]

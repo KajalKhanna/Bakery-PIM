@@ -1,0 +1,94 @@
+<?php //%255B71500417a1a216f5600cd8ccde3a1e7c%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'dpid' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT u0_.id AS id_0, u0_.first_name AS first_name_1, u0_.last_name AS last_name_2, u0_.email AS email_3, u0_.roles AS roles_4, u0_.password AS password_5, u0_.mobile AS mobile_6, u0_.dob AS dob_7, u0_.gender AS gender_8, u0_.status AS status_9, u0_.created AS created_10, u0_.updated AS updated_11 FROM `user` u0_ WHERE u0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'entity' => 'App\\Entity\\User',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'first_name_1' => 'first_name',
+                    'last_name_2' => 'last_name',
+                    'email_3' => 'email',
+                    'roles_4' => 'roles',
+                    'password_5' => 'password',
+                    'mobile_6' => 'mobile',
+                    'dob_7' => 'dob',
+                    'gender_8' => 'gender',
+                    'status_9' => 'status',
+                    'created_10' => 'created',
+                    'updated_11' => 'updated',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'entity' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'entity',
+                    'first_name_1' => 'entity',
+                    'last_name_2' => 'entity',
+                    'email_3' => 'entity',
+                    'roles_4' => 'entity',
+                    'password_5' => 'entity',
+                    'mobile_6' => 'entity',
+                    'dob_7' => 'entity',
+                    'gender_8' => 'entity',
+                    'status_9' => 'entity',
+                    'created_10' => 'entity',
+                    'updated_11' => 'entity',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\User',
+                    'first_name_1' => 'App\\Entity\\User',
+                    'last_name_2' => 'App\\Entity\\User',
+                    'email_3' => 'App\\Entity\\User',
+                    'roles_4' => 'App\\Entity\\User',
+                    'password_5' => 'App\\Entity\\User',
+                    'mobile_6' => 'App\\Entity\\User',
+                    'dob_7' => 'App\\Entity\\User',
+                    'gender_8' => 'App\\Entity\\User',
+                    'status_9' => 'App\\Entity\\User',
+                    'created_10' => 'App\\Entity\\User',
+                    'updated_11' => 'App\\Entity\\User',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

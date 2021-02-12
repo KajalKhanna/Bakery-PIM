@@ -1,0 +1,83 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* includes/menu.html.twig */
+class __TwigTemplate_7bd8f49aafcc220df515b8f99a51fdc40d511a4449b3d6d49d11686bbdd1d35a extends \Twig\Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "includes/menu.html.twig"));
+
+        // line 1
+        if ( !$this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("IS_AUTHENTICATED_FULLY")) {
+            // line 2
+            echo "    <ul class=\"nav navbar-nav navbar-right\">
+        <li><a href=\"";
+            // line 3
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+            echo "\">Signup</a></li>
+        <li><a href=\"";
+            // line 4
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\">Login</a></li>
+    </ul>
+";
+        }
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return "includes/menu.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  49 => 4,  45 => 3,  42 => 2,  40 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("{% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+    <ul class=\"nav navbar-nav navbar-right\">
+        <li><a href=\"{{ path('app_register') }}\">Signup</a></li>
+        <li><a href=\"{{ path('app_login') }}\">Login</a></li>
+    </ul>
+{% endif %}", "includes/menu.html.twig", "C:\\xampp\\htdocs\\Bakery\\templates\\includes\\menu.html.twig");
+    }
+}
